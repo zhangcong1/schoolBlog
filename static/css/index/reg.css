@@ -1,0 +1,273 @@
+@import "../base.css";
+a:hover{
+    text-decoration: none;
+}
+
+body>h1{
+    font-size: 46px;
+    color: #ea6f5a;
+    font-weight: 400;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+form{
+    width: 400px;
+    margin: 60px auto;
+    padding: 50px 50px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    text-align: center;
+}
+.reg{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.reg>a:nth-of-type(3){
+    display: inline-block;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ea6f5a;
+    border-bottom: 2px solid #ea6f5a;
+}
+.reg>a:nth-of-type(2){
+    display: inline-block;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #969696;
+}
+.reg>a:nth-of-type(1){
+    display: inline-block;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #969696;
+}
+.reg>a:nth-of-type(1):hover{
+    border-bottom: 2px solid #ea6f5a;
+}
+.login{
+    position: relative;
+}
+.login:nth-of-type(1){
+    margin-top: 40px;
+}
+.login>input{
+    width: 100%;
+    height: 50px;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    background-color: hsla(0,0%,71%,.1);
+    vertical-align: middle;
+    border-top: 0px solid #c8c8c8;
+}
+.login>#user{
+    border-top: 1px solid #c8c8c8;
+    border-radius: 4px 4px 0 0;
+}
+.login>.phoneMa{
+    border-radius: 0 0 4px 4px;
+}
+.login>a{
+    display: block;
+    width: 90px;
+    height: 34px;
+    background: #3194d0;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 14px;
+    color: white;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.login>a:hover{
+    background: #187CB6;
+}
+.pass{
+    margin-top: 0;
+    border-radius: 0;
+    border-top: none;
+}
+.pass1{
+    margin-top: 0;
+    border-top: none;
+}
+.iconfont.icon-user,.iconfont.icon-mima,.iconfont.icon-shouji,.iconfont.icon-shoujiyanzhengma{
+    font-size: 24px;
+    color: #969696;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+}
+.checkma{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.check{
+    width: 200px;
+    height: 40px;
+    padding: 4px 12px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    vertical-align: middle;
+    float: left;
+}
+.ma{
+    display: inline-block;
+    width: 80px;
+    background: #dfdfdf;
+    height: 40px;
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+}
+.submit{
+    margin-top: 40px;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    background: #42c02e;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+}
+input[type="submit"]:hover{
+    background: #3db922;
+}
+.more{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+.sign{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #969696;
+}
+.moreSign{
+    font-size: 12px;
+    color: #b5b5b5;
+    margin: 0 0 20px;
+    line-height: 18px;
+    position: relative;
+}
+.moreSign::before{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #b5b5b5;
+    position: absolute;
+    left: 30px;
+    top: 9px;
+}
+.moreSign::after{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #b5b5b5;
+    position: absolute;
+    right: 30px;
+    top: 9px;
+}
+.more>ul{
+    width: 100%;
+    height: auto;
+    padding: 0 63px;
+    display: flex;
+    justify-content: space-between;
+}
+.more>ul>li{
+    width: 50px;
+    height: 50px;
+}
+.more>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #e05244;
+    text-align: center;
+    line-height: 50px;
+}
+.more>ul>li:nth-of-type(2)>a{
+    background: #00bb29;
+}
+.more>ul>li:nth-of-type(3)>a{
+    background: #498ad5;
+}
+.iconfont.icon-weibo,.iconfont.icon-weixin{
+    font-size: 24px;
+    color: white;
+}
+.iconfont.icon-qq{
+    font-size: 22px;
+    color: white;
+}
+
+/*验证*/
+.err{
+    width: 135px;
+    height: 38px;
+    border: 1px solid #ea6f5a;
+    background-color: #fff;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 4px;
+    position: absolute;
+    left: 310px;
+    top:6px;
+    padding: 5px 10px;
+    display: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.err::before{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 8px solid #ea6f5a;
+    border-left: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    left: -16px;
+    top:0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.err::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    left: -12px;
+    top:0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}

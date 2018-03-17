@@ -1,0 +1,78 @@
+{include file=$header}
+<link rel="stylesheet" href="{CSS_URL}/index/setting.css">
+<link rel="stylesheet" href="{ICON_URL}">
+<script src="{JS_URL}/index/setting.js"></script>
+    <!--设置-->
+    <section class="setting">
+        <main>
+            <ul class="setLeft">
+                <li>
+                    <a href="javascript:void (0);">
+                        <div class="seticon">
+                            <span class="iconfont icon-iconshezhi01"></span>
+                        </div>
+                        基础设置
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <div class="seticon">
+                            <span class="iconfont icon-iconshezhi01"></span>
+                        </div>
+                        个人资料
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <div class="seticon">
+                            <span class="iconfont icon-iconshezhi01"></span>
+                        </div>
+                        账号管理
+                    </a>
+                </li>
+            </ul>
+            <div class="setRight">
+                <form action="">
+                    <div class="uhead">
+                        <img src="{IMG_URL}/myhead.png" alt="" height="100%">
+                    </div>
+                    <div style="display: inline-block;position: relative">
+                        <a href="" class="change">更改头像</a>
+                        <input type="file" style="position: absolute;left: 40px;top: 0;width: 100%;height: 100%;opacity: 0">
+                    </div>
+                    <div class="nick">
+                        <span>昵称</span>
+                        <input type="text" value="暖色调">
+                    </div>
+                    <div class="nick">
+                        <span>手机</span>
+                        159****2153
+                        <!--<input type="text" value="15935412153">-->
+                        <a href="">修改</a>
+                    </div>
+                    <div class="nick">
+                        <span>注册时间</span>
+                        <!--<input type="text" value="">-->
+                        2017/10/25
+                        <a href="">注销账户</a>
+                    </div>
+                    <input type="submit" value="保存">
+                </form>
+                <form action="">
+                    <div class="nick">
+                        <span>性别</span>
+                        <input type="radio" name="sex"><b>男</b>
+                        <input type="radio" name="sex"><b>女</b>
+                        <input type="radio" name="sex"><b>保密</b>
+                    </div>
+                    <div class="nick">
+                        <span>个人简介</span>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="填写你的个人简介..."></textarea>
+                    </div>
+                    <input type="submit" value="保存">
+                </form>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

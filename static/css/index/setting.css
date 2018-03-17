@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "苹方 常规","微软雅黑","serif";
+}
+.header{
+    width: 100%;
+    height: 60px;
+}
+
+/*设置*/
+.setting{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+.setLeft{
+    width: 280px;
+    height: auto;
+    float: left;
+}
+.setLeft>li{
+    width: 100%;
+    height: 52px;
+    border-radius: 6px;
+}
+.setLeft>li:first-child{
+    background: #f0f0f0;
+}
+.setLeft>li:hover{
+    background: #f0f0f0!important;
+}
+.setLeft>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+.seticon{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: #a0a0a0;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.setRight{
+    width: 625px;
+    height: auto;
+    float: right;
+}
+.uhead{
+    display: inline-block;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.change{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #42c02e;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #42c02e;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 40px;
+}
+.nick{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 0;
+}
+.nick>span{
+    display: inline-block;
+    width: 150px;
+    font-size: 15px;
+    color: #969696;
+}
+.nick>input[type="text"]{
+    width: 212px;
+    height: 31px;
+    border: 1px solid #c8c8c8;
+    background: hsla(0,0%,71%,.1);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #333333;
+    box-sizing: border-box;
+}
+.nick>a{
+    font-size: 14px;
+    color: #42c02e;
+    margin-left: 50px;
+}
+form>input[type="submit"]{
+    width: 100px;
+    height: 32px;
+    background: #42c02e;
+    margin: 30px 0 60px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: white;
+}
+form:nth-of-type(2){
+    display: none;
+}
+.nick>input[type="radio"]{
+    margin-right: 10px;
+}
+.nick>input[type="radio"]+b{
+    margin-right: 10px;
+    font-weight: 400;
+}
+textarea{
+    width: 355px;
+    height: 100px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    vertical-align: top;
+    resize: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}

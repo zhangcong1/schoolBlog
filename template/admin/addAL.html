@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{CSS_URL}/bootstrap.min.css">
+
+    <title>添加文章等级</title>
+    <style>
+        body{
+            padding: 40px;
+            min-height: 600px;
+            background: #ffffff;
+            box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+        }
+        form{
+            width: 500px;
+            height: auto;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="index.php?m=admin&f=user&a=addRoleCon" method="post">
+    <h2>添加文章等级</h2>
+    <div class="form-group">
+        <label for="alname">文章等级名称</label>
+        <input type="text" class="form-control" id="alname" placeholder="请输入文章等级名称" name="alname">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">添加</button>
+</form>
+</body>
+</html>

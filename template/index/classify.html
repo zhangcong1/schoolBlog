@@ -1,0 +1,71 @@
+{include file=$header}
+<link rel="stylesheet" href="{CSS_URL}/index/classify.css">
+<link rel="stylesheet" href="{ICON_URL}">
+<script src="{JS_URL}/index/classify.js"></script>
+    <!--全部专题-->
+    <section class="zhuanti">
+        <main>
+            <div class="headImg">
+                <img src="{IMG_URL}/zhuanti.png" alt="" width="100%">
+                <a href="">
+                    <span class="iconfont icon-wenhao"></span>
+                    如何创建并玩转专题
+                </a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-tuijian"></span>
+                        推荐
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-remen"></span>
+                        热门
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-chengshi"></span>
+                        城市
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-boshimao-copy"></span>
+                        校园
+                    </a>
+                </li>
+            </ul>
+            <ul class="lists">
+                {foreach $data as $v}
+                <li>
+                    <div class="content">
+                        <a href="index.php?m=index&f=index&a=lists&cid={$v['cid']}" class="conHead">
+                            <img src="{APP_URL}/{$v['cimage']}" alt="" height="100%">
+                        </a>
+                        <a href="index.php?m=index&f=index&a=lists&cid={$v['cid']}">
+                            <h4>{$v["cname"]}</h4>
+                            <p>{$v["cinfo"]}</p>
+                        </a>
+                        <a href="index.php?m=index&f=index&a=lists&cid={$v['cid']}" class="guanzhu">
+                            <!--<span class="iconfont icon-jia-b"></span>-->
+                            <span>点击进入</span>
+                        </a>
+                        <a href="javascript:;" class="guanzhu1">
+                            <span class="iconfont icon-duigou"></span>
+                            <span>已关注</span>
+                        </a>
+                        <div class="count">
+                            <a href="">67855篇文章</a>
+                            <span> · 1060.6K人关注</span>
+                        </div>
+                    </div>
+                </li>
+                {/foreach}
+            </ul>
+        </main>
+    </section>
+</body>
+</html>

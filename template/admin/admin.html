@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{CSS_URL}/bootstrap.min.css">
+    <link rel="stylesheet" href="{CSS_URL}/admin/admin.css">
+    <link rel="stylesheet" href="{ICON_URL}">
+    <script src="{JS_URL}/jquery-3.2.1.js"></script>
+    <script src="{JS_URL}/admin/admin.js"></script>
+    <title>简书后台管理系统</title>
+</head>
+<body>
+    <aside>
+        <h3>简书后台管理</h3>
+        <ul class="list">
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                管理员管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=adminM" target="right">查看管理员</a></li>
+                <li><a href="index.php?m=admin&f=adminM&a=add" target="right">添加管理员</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                用户管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user" target="right">查看用户</a></li>
+                <li><a href="index.php?m=admin&f=user&a=add" target="right">添加用户</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                留言管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showWords" target="right">查看留言</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addWords" target="right">添加留言</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                用户留言管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showWords" target="right">查看用户留言</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addWords" target="right">添加用户留言</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                用户发表内容管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showContent" target="right">查看内容</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addContent" target="right">添加内容</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                管理员级别管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=adminM&a=showRank" target="right">查看管理员级别</a></li>
+                <li><a href="index.php?m=admin&f=adminM&a=addRank" target="right">添加管理员级别</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                用户角色管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showRole" target="right">查看用户角色管理</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addRole" target="right">添加用户角色管理</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                分类管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showCategory" target="right">查看分类</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addCategory" target="right">添加分类</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                订单管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showOrder" target="right">查看订单</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addOrder" target="right">添加订单</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                用户支付管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showBuy" target="right">查看用户支付</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addBuy" target="right">添加用户支付</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                商家账户管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showAccount" target="right">查看商家账户</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addAccount" target="right">添加商家账户</a></li>
+            </ul>
+            <li>
+                <span class="iconfont icon-guanwangicon31315"></span>
+                推荐位管理</li>
+            <ul class="list1">
+                <li><a href="index.php?m=admin&f=user&a=showPosition" target="right">查看推荐位</a></li>
+                <li><a href="index.php?m=admin&f=user&a=addPosition" target="right">添加推荐位</a></li>
+            </ul>
+        </ul>
+    </aside>
+    <header>
+        <div class="button">
+            <span class="iconfont icon-liebiao1"></span>
+        </div>
+        DASHBOARD
+        <a href="index.php">简书首页</a>
+        <a href="index.php?m=admin&f=login&a=loginOut" class="btn btn-danger"><span class="glyphicon glyphicon-off" style="margin-right: 5px"></span>退出登录</a>
+        <div class="admin">
+            <div class="head">
+                <img src="" alt="">
+            </div>
+            欢迎<span>{$aname}</span>登录！
+            <!--<div class="sanjiao"></div>
+            <ul class="info">
+                <li>个人中心</li>
+                <li>退出登录</li>
+            </ul>-->
+        </div>
+    </header>
+    <div class="con">
+        <iframe src="" frameborder="0" name="right"></iframe>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+       /* html,body{
+            width: 100%;
+            height: 100%;
+        }*/
+        .new{
+            display: block;
+            width: 160px;
+            height: 60px;
+            font-size: 24px;
+            color: #333333;
+            border: 1px solid #ec7259;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 60px;
+            text-decoration: none;
+            margin: 30px 20px;
+        }
+        .save{
+            float: left;
+            padding: 0 20px;
+            box-sizing: border-box;
+            width: 50%;
+            height: 100%;
+            border-right: 1px solid #dfdfdf;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        tr{
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.php?m=index&f=write&a=addConCon&cid={$cid}" class="new">新建文章</a>
+    <div class="save">
+        <h2>已保存文章</h2>
+        <table>
+            <tr>
+                <th>文章标题</th>
+                <th>保存日期</th>
+                <th>操作</th>
+            </tr>
+            {foreach $data as $v}
+            <tr>
+                <td>{$v["ctitle"]}</td>
+                <td>{$v["condate"]}</td>
+                <td>
+                    <a href="index.php?m=index&f=write&a=editCon&cid={$cid}&conid={$v['conid']}">编辑</a>
+                </td>
+            </tr>
+            {/foreach}
+        </table>
+    </div>
+    <div class="save">
+        <h2>已发布文章</h2>
+        <table>
+            <tr>
+                <th>文章标题</th>
+                <th>保存日期</th>
+                <th>操作</th>
+            </tr>
+            {foreach $data1 as $v}
+            <tr>
+                <td>{$v["ctitle"]}</td>
+                <td>{$v["condate"]}</td>
+                <td>
+                    <a href="index.php?m=index&f=write&a=editCon&cid={$cid}&conid={$v['conid']}">编辑</a>
+                </td>
+            </tr>
+            {/foreach}
+        </table>
+    </div>
+</body>
+</html>

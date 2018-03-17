@@ -1,0 +1,190 @@
+{include file=$header}
+<link rel="stylesheet" href="{CSS_URL}/index/index.css">
+<link rel="stylesheet" href="{ICON_URL}">
+<script src="{JS_URL}/index.js"></script>
+<script src="{JS_URL}/index/banner/velocity.js"></script>
+<script src="{JS_URL}/index/banner/shutter.js"></script>
+<link rel="stylesheet" href="{JS_URL}/index/banner/shutter.css">
+    <!--banner-->
+    <section>
+        <main>
+            <!--banner-->
+            <!--<div class="banner">
+                <a href="javascript:void (0)" class="back">
+                    <span class="iconfont icon-qianjin"></span>
+                </a>
+                <a href="javascript:void (0)" class="forward">
+                    <span class="iconfont icon-qianjin-copy"></span>
+                </a>
+                <ul class="leftBox">
+                    <li>
+                        <a href="" class="left">
+                            <img src="{IMG_URL}/banner1.jpg" alt="" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="left">
+                            <img src="{IMG_URL}/banner2.jpg" alt="" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="left">
+                            <img src="{IMG_URL}/banner3.jpg" alt="" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="left">
+                            <img src="{IMG_URL}/banner4.png" alt="" width="100%">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="rightBox">
+                    <li>
+                        <a href="">
+                            <img src="{IMG_URL}/banner1.jpg" alt="" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="{IMG_URL}/banner2.jpg" alt="" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="{IMG_URL}/banner3.jpg" alt="" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="{IMG_URL}/banner4.png" alt="" width="100%">
+                        </a>
+                    </li>
+                </ul>
+            </div>-->
+            <div class="shutter">
+                <div class="shutter-img">
+                    <a href="index.php?m=index&f=index&a=detail&conid=6" data-shutter-title="风雪夜归人"><img src="{IMG_URL}/ban2.jpg" alt="#"></a>
+                    <a href="index.php?m=index&f=index&a=detail&conid=6" data-shutter-title="假如我有一双翅膀"><img src="{IMG_URL}/ban1.jpg" alt="#"></a>
+                    <a href="index.php?m=index&f=index&a=detail&conid=6" data-shutter-title="随遇而安，感恩遇见"><img src="{IMG_URL}/ban3.jpg" alt="#"></a>
+                    <a href="index.php?m=index&f=index&a=detail&conid=6" data-shutter-title="对不起，是我没有好好珍惜"><img src="{IMG_URL}/ban4.jpg" alt="#"></a>
+                </div>
+                <ul class="shutter-btn">
+                    <li class="prev"></li>
+                    <li class="next"></li>
+                </ul>
+                <div class="shutter-desc">
+                    <p>假如我有一双翅膀</p>
+                </div>
+            </div>
+            <!--专题-->
+            <div class="zhuanti">
+                <div class="more">
+                    {foreach $data as $v}
+                    <a href="index.php?m=index&f=index&a=lists&cid={$v['cid']}">
+                        <img src="{APP_URL}/{$v['cimage']}" alt="" width="32px" height="32px">
+                        <span>{$v["cname"]}</span>
+                    </a>
+                    {/foreach}
+                    <a href="index.php?m=index&f=index&a=classify">更多热门专题  &gt;</a>
+                </div>
+                <!--发表文章-->
+                <ul class="list">
+                    {foreach $data1 as $v}
+                    <li>
+                        <div class="author">
+                            <a href="" class="headImg">
+                                <img src="{IMG_URL}/myhead.png" alt="" height="100%">
+                            </a>
+                            <a href="" class="user">{$v["uname"]}</a>
+                            <span>{$v['condate']}</span>
+                        </div>
+                        <a href="index.php?m=index&f=index&a=detail&conid={$v['conid']}" class="title">{$v["ctitle"]}</a>
+                        <div class="p">
+                            {$v["con"]}
+                        </div>
+                        <div class="foot">
+                            <a href="" class="fenlei">{$v["cname"]}</a>
+                            <a href="" class="lookup">
+                                <span class="iconfont icon-liulan"></span>
+                                {$v["hit"]}
+                            </a>
+                            <a href="" class="lookup">
+                                <span class="iconfont icon-message"></span>
+                                134
+                            </a>
+                            <span class="lookup">
+                                <span class="iconfont icon-xin"></span>
+                                481
+                            </span>
+                            <span class="lookup">
+                                <span class="iconfont icon-dashang"></span>
+                                81
+                            </span>
+                        </div>
+                        <div class="image">
+                            <img src="{APP_URL}/{$v['thumb']}" alt="" height="100%">
+                        </div>
+                    </li>
+                    {/foreach}
+                </ul>
+                <a href="javascript:;" class="readMore">阅读更多</a>
+            </div>
+            <!--热门推荐-->
+            <div class="hot">
+                <div class="rank">
+                    <a href="index.php?m=index&f=hot">
+                        <img src="{IMG_URL}/hot1.png" alt="" width="100%">
+                    </a>
+                    <a href="index.php?m=index&f=hot">
+                        <img src="{IMG_URL}/hot2.png" alt="" width="100%">
+                    </a>
+                    <a href="index.php?m=index&f=hot">
+                        <img src="{IMG_URL}/hot3.png" alt="" width="100%">
+                    </a>
+                    <a href="">
+                        <img src="{IMG_URL}/hot4.png" alt="" width="100%">
+                    </a>
+                    <a href="">
+                        <img src="{IMG_URL}/hot5.png" alt="" width="100%">
+                    </a>
+                </div>
+                <a href="" class="app">
+                    <div class="appIMG">
+                        <img src="{IMG_URL}/app.png" alt="" width="100%">
+                    </div>
+                    <div class="appTitle">下载简书小说app &gt;</div>
+                    <div class="discription">随时随地发现和创建内容</div>
+                </a>
+                <!--推荐作者-->
+                <div class="recommend">
+                    <div class="reTitle">
+                        <span>推荐作者</span>
+                        <a href="">
+                            <span class="iconfont icon-huanyihuan"></span>
+                            <span>换一换</span>
+                        </a>
+                    </div>
+                    <ul class="reAuthor">
+                        {foreach $data2 as $v}
+                        <li>
+                            <div class="reHead">
+                                <img src="{IMG_URL}/3.jpg" alt="" width="100%">
+                            </div>
+                            <div class="reName">
+                                <span>{$v["uname"]}</span>
+                                <a href="">+ 关注</a>
+                            </div>
+                            <p>写了361.7k字 · 20.3k喜欢</p>
+                        </li>
+                        {/foreach}
+                    </ul>
+                    <a href="" class="all">查看全部 &gt;</a>
+                </div>
+            </div>
+        </main>
+    </section>
+    <div class="TOP">
+        <span class="iconfont icon-12"></span>
+    </div>
+</body>
+</html>

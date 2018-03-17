@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "苹方 常规","微软雅黑","serif";
+}
+.header{
+    width: 100%;
+    height: 60px;
+}
+.con{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+.left{
+    width: 625px;
+    height: auto;
+    float: left;
+}
+.head{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+.headImg1{
+    width: 78px;
+    height: 78px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    float: left;
+    overflow: hidden;
+}
+.head>h2{
+    float: left;
+    width: calc(100% - 80px);
+    padding: 12px 0 10px 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #333333;
+}
+.shoulu{
+    float: left;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #969696;
+}
+.tougao,.guanzhu{
+    display: block;
+    width: 88px;
+    height: 38px;
+    border: 1px solid #42c02e;
+    border-radius: 100px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 110px;
+    font-size: 15px;
+    color: #42c02e;
+    text-align: center;
+    line-height: 38px;
+}
+.tougao:hover{
+    background: #f2fdf0;
+}
+.iconfont.icon-jia-b{
+    font-size: 13px;
+}
+.guanzhu{
+    width: 90px;
+    height: 40px;
+    background: #42c02e;
+    color: white;
+    right: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-top: 20px;
+}
+.menu>li{
+    height: 100%;
+    line-height: 46px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+.menu>li:hover>a::after{
+    width: 122px;
+}
+.menu>li:hover>a{
+    color: #646464!important;
+}
+.menu>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+    color: #969696;
+    margin-top: -2px;
+}
+.menu>li>a::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    height: 2px;
+    background: #646464;
+    transition: .5s;
+}
+.menu>li>a>span{
+    font-weight: 400;
+    margin-right: 5px;
+}
+.border{
+    border-bottom: 2px solid #646464;
+}
+
+.list{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+.list>li{
+    width: 100%;
+    height: auto;
+    padding: 10px 0 20px 0;
+    border-top: 1px solid #f0f0f0;;
+    position: relative;
+}
+.author{
+    width: 463px;
+    height: 32px;
+    margin-bottom: 10px;
+    line-height: 32px;
+    font-size: 0;
+}
+.headImg{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    float: left;
+}
+.user{
+    display: inline-block;
+    font-size: 14px;
+    color: #2f2f2f;
+    padding-left: 10px;
+    float: left;
+}
+.user+span{
+    font-size: 14px;
+    color: #969696;
+    padding-left: 10px;
+}
+.title{
+    display: block;
+    font-size: 16px;
+    color: #2f2f2f;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.title:hover{
+    text-decoration: underline;
+}
+.p{
+    width: 463px;
+    height: 72px;
+    overflow: hidden;
+    /*white-space: pre-wrap;*/
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.foot{
+    width: 463px;
+    height: 20px;
+}
+.fenlei{
+    display: inline-block;
+    padding: 0px 6px;
+    border: 1px solid #ec6149;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #ec6149;
+}
+.lookup{
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-right: 10px;
+}
+.iconfont.icon-liulan{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.iconfont.icon-message{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.iconfont.icon-xin{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.iconfont.icon-dashang{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.lookup:hover{
+    color: #555555;
+}
+.lookup:hover .iconfont.icon-liulan{
+    color: #555555;
+}
+.lookup:hover .iconfont.icon-message{
+    color: #555555;
+}
+.image{
+    width: 150px;
+    height: 120px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    border:1px solid #f0f0f0;
+}
+
+.readMore{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: #a5a5a5;
+    margin: 30px 0 60px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: white;
+}
+.readMore:hover{
+    background: #999999;
+}
+.list>li:first-child{
+    border-top: none;
+}
+
+/*专题公告*/
+.gonggao{
+    float: right;
+    width: 280px;
+    height: 400px;
+}
+.gonggao p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #969696;
+}
+.content{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    height: 360px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.content>p{
+    color: #333333;
+}
+.content>p>a{
+    font-size: 14px;
+    color: #00a2d4;
+}
+.extend{
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #969696;
+}
+.extend:hover{
+    color: #ec6149;
+}
+.share{
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+    color: #333333;
+}
+.share>a{
+    font-size: 16px;
+    color: #333333;
+    margin-left: 10px;
+}
+.share>a:hover{
+    color: #00a2d4;
+}

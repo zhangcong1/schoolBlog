@@ -1,0 +1,35 @@
+<div class="Lauthor">
+    <a href="">
+        <img src="{IMG_URL}/3.jpg" alt="" width="100%">
+    </a>
+    <div class="Linfo">
+        <a href="">{$uname1}</a>
+        <br>
+        <span>1楼</span>
+        <span>{$data["mdate"]}</span>
+    </div>
+</div>
+<p>{$mcon}</p>
+<div class="Lgood">
+    <a href="">
+        <span class="iconfont icon-dianzan"></span>
+        15人点赞</a>
+    <a href="javascript:;" class="replaybtn">
+        <span class="iconfont icon-liuyan"></span>
+        回复</a>
+</div>
+<ul class="huifu">
+    <div class="addNew">
+        <a href="javascript:;">
+            <span class="iconfont icon-pencil"></span>
+            添加新评论
+        </a>
+    </div>
+    <form class="commentArea">
+        <textarea name="" id="textarea1" cols="30" rows="10" placeholder="写下你的评论..."></textarea>
+        <input type="hidden" value="{$data['conid']}" class="hide3">
+        <input type="button" value="发送" class="replayBtn" mid="{$data['mid']}">
+        <div class="cancel cancel1">取消</div>
+        <p>您还可以输入<span>200</span>字</p>
+    </form>
+</ul>

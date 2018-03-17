@@ -1,0 +1,14 @@
+html,body,h1,h2,h3,h4,h5,h6,ul,li,input,a{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+body{
+    font-family: "苹方 常规","微软雅黑","serif",-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    /*background:#e9ecf0 url("../img/background.jpg") no-repeat center center;*/
+    /*background-size: cover;*/
+    font-size: 16px;
+    color: #333333;
+}

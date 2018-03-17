@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{CSS_URL}/bootstrap.min.css">
+
+    <title>添加用户角色</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            padding: 40px;
+            min-height: 600px;
+            background: #ffffff;
+            box-shadow: 0 0 20px 5px rgba(0,0,0,0.3);
+        }
+        form{
+            width: 500px;
+            height: auto;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form action="index.php?m=admin&f=user&a=addRoleCon" method="post">
+    <h2>添加用户角色</h2>
+    <div class="form-group">
+        <label for="rname">用户角色</label>
+        <input type="text" class="form-control" id="rname" placeholder="请输入用户角色" name="rname">
+    </div>
+    <div class="form-group">
+        <label for="connum">发布文章数量</label>
+        <input type="text" class="form-control" id="connum" placeholder="请输入发布文章数量" name="connum">
+    </div>
+    <div class="form-group">
+        <label>查看文章级别</label><br>
+        {foreach $data as $v}
+        <label for="{$v['alid']}" style="margin: 5px">{$v["alname"]}: </label><input type="radio" name="conlevel" value="{$v['alid']}" id="{$v['alid']}" style="margin: 5px">
+        {/foreach}
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">添加</button>
+</form>
+</body>
+</html>

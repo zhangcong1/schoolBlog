@@ -1,0 +1,89 @@
+{include file=$header}
+<link rel="stylesheet" href="{CSS_URL}/index/hot.css">
+<link rel="stylesheet" href="{ICON_URL}">
+<script src="{JS_URL}/index.js"></script>
+<!--banner-->
+<section>
+    <main>
+        <!--专题-->
+        <div class="zhuanti">
+            <div class="hotImg">
+                <img src="{IMG_URL}/7hot.png" alt="" width="100%">
+            </div>
+            <!--发表文章-->
+            <ul class="list">
+                {foreach $data1 as $v}
+                <li>
+                    <div class="author">
+                        <a href="" class="headImg">
+                            <img src="{IMG_URL}/myhead.png" alt="" height="100%">
+                        </a>
+                        <a href="" class="user">{$v["uname"]}</a>
+                        <span>{$v['condate']}</span>
+                    </div>
+                    <a href="index.php?m=index&f=index&a=detail&conid={$v['conid']}" class="title">{$v["ctitle"]}</a>
+                    <div class="p">
+                        {$v["con"]}
+                    </div>
+                    <div class="foot">
+                        <a href="" class="fenlei">{$v["cname"]}</a>
+                        <a href="" class="lookup">
+                            <span class="iconfont icon-liulan"></span>
+                            8801
+                        </a>
+                        <a href="" class="lookup">
+                            <span class="iconfont icon-message"></span>
+                            134
+                        </a>
+                        <span class="lookup">
+                                <span class="iconfont icon-xin"></span>
+                                481
+                            </span>
+                        <span class="lookup">
+                                <span class="iconfont icon-dashang"></span>
+                                81
+                            </span>
+                    </div>
+                    <div class="image">
+                        <img src="{APP_URL}/{$v['thumb']}" alt="" height="100%">
+                    </div>
+                </li>
+                {/foreach}
+            </ul>
+            <a href="" class="readMore">阅读更多</a>
+        </div>
+        <!--热门推荐-->
+        <div class="hot">
+            <!--推荐作者-->
+            <div class="recommend">
+                <div class="reTitle">
+                    <span>推荐作者</span>
+                    <a href="">
+                        <span class="iconfont icon-huanyihuan"></span>
+                        <span>换一换</span>
+                    </a>
+                </div>
+                <ul class="reAuthor">
+                    {foreach $data2 as $v}
+                    <li>
+                        <div class="reHead">
+                            <img src="{IMG_URL}/3.jpg" alt="" width="100%">
+                        </div>
+                        <div class="reName">
+                            <span>{$v["uname"]}</span>
+                            <a href="">+ 关注</a>
+                        </div>
+                        <p>写了361.7k字 · 20.3k喜欢</p>
+                    </li>
+                    {/foreach}
+                </ul>
+                <a href="" class="all">查看全部 &gt;</a>
+            </div>
+        </div>
+    </main>
+</section>
+<div class="TOP">
+    <span class="iconfont icon-12"></span>
+</div>
+</body>
+</html>

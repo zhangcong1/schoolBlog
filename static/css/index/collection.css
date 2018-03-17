@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "苹方 常规","微软雅黑","serif";
+}
+.header{
+    width: 100%;
+    height: 60px;
+}
+.collection{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+.main1{
+    width: 690px;
+    height: auto;
+    margin: 0 auto;
+}
+.main1>img{
+    margin-bottom: 30px;
+}
+
+.list{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+.list>li{
+    width: 100%;
+    height: auto;
+    padding: 10px 0 20px 0;
+    border-top: 1px solid #f0f0f0;;
+    position: relative;
+}
+.author{
+    width: 463px;
+    height: 32px;
+    margin-bottom: 10px;
+    line-height: 32px;
+    font-size: 0;
+}
+.headImg{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    float: left;
+}
+.user{
+    display: inline-block;
+    font-size: 14px;
+    color: #2f2f2f;
+    padding-left: 10px;
+    float: left;
+}
+.user+span{
+    font-size: 14px;
+    color: #969696;
+    padding-left: 10px;
+}
+.title{
+    display: block;
+    font-size: 16px;
+    color: #2f2f2f;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.title:hover{
+    text-decoration: underline;
+}
+.title+p{
+    width: 463px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.foot{
+    width: 463px;
+    height: 20px;
+}
+.fenlei{
+    display: inline-block;
+    padding: 0px 6px;
+    border: 1px solid #ec6149;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #ec6149;
+}
+.lookup{
+    font-size: 12px;
+    color: #b4b4b4;
+    margin-right: 10px;
+}
+.iconfont.icon-liulan{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.iconfont.icon-message{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.iconfont.icon-xin{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.iconfont.icon-dashang{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.lookup:hover{
+    color: #555555;
+}
+.lookup:hover .iconfont.icon-liulan{
+    color: #555555;
+}
+.lookup:hover .iconfont.icon-message{
+    color: #555555;
+}
+.image{
+    width: 150px;
+    height: 120px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    border:1px solid #f0f0f0;
+}
+
+.readMore{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: #a5a5a5;
+    margin: 30px 0 60px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: white;
+}
+.readMore:hover{
+    background: #999999;
+}

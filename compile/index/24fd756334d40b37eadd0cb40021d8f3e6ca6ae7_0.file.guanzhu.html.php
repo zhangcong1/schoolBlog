@@ -1,0 +1,256 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-10-29 15:07:55
+  from "D:\wamp64\www\blog\template\index\guanzhu.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59f5eecb67f424_81105865',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '24fd756334d40b37eadd0cb40021d8f3e6ca6ae7' => 
+    array (
+      0 => 'D:\\wamp64\\www\\blog\\template\\index\\guanzhu.html',
+      1 => 1509289649,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59f5eecb67f424_81105865 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="<?php echo CSS_URL;?>
+/index/guanzhu.css">
+    <link rel="stylesheet" href="<?php echo ICON_URL;?>
+">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_URL;?>
+/jquery-3.2.1.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_URL;?>
+/index/personal.js"><?php echo '</script'; ?>
+>
+    <title>个人中心</title>
+</head>
+<body>
+<!--头部-->
+<div class="header"></div>
+<!--个人中心-->
+<section class="person">
+    <main>
+        <div class="left">
+            <div class="ziliao">
+                <div class="head">
+                    <img src="<?php echo IMG_URL;?>
+/banner1.png" alt="" height="100%">
+                </div>
+                <div class="title">暖色调</div>
+                <ul>
+                    <li>
+                        <a href="index.php?m=index&f=index&a=guanzhu">
+                            <p>21</p>
+                            关注 <span class="iconfont icon-you-copy"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>21</p>
+                            粉丝 <span class="iconfont icon-you-copy"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>21</p>
+                            文章 <span class="iconfont icon-you-copy"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>21</p>
+                            字数
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>21</p>
+                            收获喜欢
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-wenzhang-copy"></span>
+                        文章
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-dongtai1"></span>
+                        动态
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-pinglun"></span>
+                        最新评论
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void (0);">
+                        <span class="iconfont icon-remen"></span>
+                        热门
+                    </a>
+                </li>
+            </ul>
+            <ul class="lists">
+                <li>
+                    <div class="author">
+                        <a href="" class="Ahead"></a>
+                        <div class="name">
+                            <a href="" class="Aname">暖色调</a>
+                            <span>关注了作者 · </span>
+                            <span>10.22 15:20</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="info">
+                            <a href=""class="infoHead"></a>
+                            <a href="" class="infoTitle">名贵的考拉熊</a>
+                            <p>写了 64182 字，获得了 8608 个喜欢</p>
+                            <a href="" class="guanzhu">
+                                <span class="iconfont icon-duigou"></span>
+                                <span>已关注</span>
+                            </a>
+                        </div>
+                        <p>我是简书家的宝玉~
+
+                            在微信上搜索公众号“简宝玉”（jianshubaoyu），即可了解关于简书的一切事情。有问题，找宝玉！简宝玉同志会专程为您解疑答惑。
+
+                            发送 拒稿/专题投稿，了解简书专题收稿相关规则~
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="author">
+                        <a href="" class="Ahead"></a>
+                        <div class="name">
+                            <a href="" class="Aname">暖色调</a>
+                            <span>关注了作者 · </span>
+                            <span>10.22 15:20</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="info">
+                            <a href=""class="infoHead"></a>
+                            <a href="" class="infoTitle">名贵的考拉熊</a>
+                            <p>写了 64182 字，获得了 8608 个喜欢</p>
+                            <a href="" class="guanzhu">
+                                <span class="iconfont icon-duigou"></span>
+                                <span>已关注</span>
+                            </a>
+                        </div>
+                        <p>我是简书家的宝玉~
+
+                            在微信上搜索公众号“简宝玉”（jianshubaoyu），即可了解关于简书的一切事情。有问题，找宝玉！简宝玉同志会专程为您解疑答惑。
+
+                            发送 拒稿/专题投稿，了解简书专题收稿相关规则~
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="author">
+                        <a href="" class="Ahead"></a>
+                        <div class="name">
+                            <a href="" class="Aname">暖色调</a>
+                            <span>关注了作者 · </span>
+                            <span>10.22 15:20</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="info">
+                            <a href=""class="infoHead"></a>
+                            <a href="" class="infoTitle">名贵的考拉熊</a>
+                            <p>写了 64182 字，获得了 8608 个喜欢</p>
+                            <a href="" class="guanzhu">
+                                <span class="iconfont icon-duigou"></span>
+                                <span>已关注</span>
+                            </a>
+                        </div>
+                        <p>我是简书家的宝玉~
+
+                            在微信上搜索公众号“简宝玉”（jianshubaoyu），即可了解关于简书的一切事情。有问题，找宝玉！简宝玉同志会专程为您解疑答惑。
+
+                            发送 拒稿/专题投稿，了解简书专题收稿相关规则~
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="author">
+                        <a href="" class="Ahead"></a>
+                        <div class="name">
+                            <a href="" class="Aname">暖色调</a>
+                            <span>关注了作者 · </span>
+                            <span>10.22 15:20</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="info">
+                            <a href=""class="infoHead"></a>
+                            <a href="" class="infoTitle">名贵的考拉熊</a>
+                            <p>写了 64182 字，获得了 8608 个喜欢</p>
+                            <a href="" class="guanzhu">
+                                <span class="iconfont icon-duigou"></span>
+                                <span>已关注</span>
+                            </a>
+                        </div>
+                        <p>我是简书家的宝玉~
+
+                            在微信上搜索公众号“简宝玉”（jianshubaoyu），即可了解关于简书的一切事情。有问题，找宝玉！简宝玉同志会专程为您解疑答惑。
+
+                            发送 拒稿/专题投稿，了解简书专题收稿相关规则~
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Pright">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-xin"></span>
+                        我关注的作者
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-xin"></span>
+                        我喜欢的文章
+                    </a>
+                </li>
+            </ul>
+            <p>我创建的专题</p>
+            <p>
+                <a href="">
+                    <span class="iconfont icon-jia-b"></span>
+                    创建一个新专题
+                </a>
+            </p>
+        </div>
+    </main>
+</section>
+</body>
+</html><?php }
+}
