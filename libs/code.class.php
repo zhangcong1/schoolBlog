@@ -77,8 +77,8 @@ class code{
         header("content-type:image/".$this->type);
         $this->setcanvas();
         $this->setCon();
-        $this->setLine();
         $this->setPix();
+        $this->setLine();
         //输出imagepng（） imagejpeg（）
         $type="image".$this->type;
         $type($this->image);
